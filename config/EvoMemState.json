@@ -1,0 +1,8 @@
+{
+  "method": "EvoMemState",
+  "top_k": 10,
+  "save_root": "output_data/evomemstate_memory",
+  "api_key_env": "MEMORY_API_KEY",
+  "base_url_env": "MEMORY_BASE_URL",
+  "llm_model_env": "MEMORY_LLM_MODEL"
+}

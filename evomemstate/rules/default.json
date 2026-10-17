@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "profile": "evomemstate_default",
+  "arms": {
+    "EvoMemState": {
+      "flat": false,
+      "latest_wins": true,
+      "decompose": true
+    }
+  },
+  "hooks": {
+    "on_after_build": [
+      "record_graph_stats"
+    ],
+    "on_before_retrieve": [
+      "resolve_arm_flags",
+      "configure_retrieval_budget",
+      "attach_decompose_client",
+      "attach_embedding_client"
+    ],
+    "on_after_retrieve": [
+      "compute_generation_signals",
+      "build_relational_state_payload"
+    ],
+    "on_before_generation": [
+      "signal_conditioned_render"
+    ]
+  }
+}

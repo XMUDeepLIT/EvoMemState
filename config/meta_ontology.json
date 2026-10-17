@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "memory_types": [
+    "preference",
+    "fact",
+    "belief",
+    "experience",
+    "constraint"
+  ],
+  "scope_levels": [
+    "global",
+    "domain",
+    "task",
+    "situation"
+  ],
+  "memory_statuses": [
+    "active",
+    "superseded",
+    "disputed"
+  ],
+  "edge_types": [
+    "PARENT_OF",
+    "CONTAINS",
+    "SUPERSEDES",
+    "CONFLICTS_WITH"
+  ],
+  "concept_edits": [
+    "CREATE",
+    "MERGE",
+    "SPLIT"
+  ]
+}

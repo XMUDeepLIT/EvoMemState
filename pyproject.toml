@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evomemstate"
+version = "0.1.0"
+description = "Ontology memory with retrieved Relational States and generated Reasoning States"
+requires-python = ">=3.9"
+dependencies = ["openai>=1.30.0,<3", "aiohttp>=3.9,<4", "requests>=2.28,<3"]
+
+[project.scripts]
+evomemstate = "evomemstate.cli:main"
+evomemstate-bench = "evomemstate.run_benchmarks:main"
+
+[tool.setuptools.packages.find]
+include = ["evomemstate*"]
+
+[tool.setuptools.package-data]
+evomemstate = ["rules/*.json"]
