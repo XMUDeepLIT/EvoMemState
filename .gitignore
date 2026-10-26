@@ -20,3 +20,16 @@ outputs/
 
 # Local model checkpoints
 models/
+
+# External RL inputs and backend dependencies
+training_data/
+dpo-dataset/
+Megatron-LM/
+*.pt
+*.pth
+*.safetensors
+wandb/
+
+# Keep vendored model architecture definitions (not checkpoints)
+!slime/scripts/models/
+!slime/scripts/models/*.sh

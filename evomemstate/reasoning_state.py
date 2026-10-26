@@ -168,6 +168,7 @@ def generate_reasoning_state(
 
     disk = cache_dir if cache_dir is not None else _cache_dir()
     if disk is not None:
+        disk.mkdir(parents=True, exist_ok=True)
         path = _cache_path(disk, model=cfg["model"], messages=messages)
         if path.is_file():
             try:
