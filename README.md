@@ -217,3 +217,17 @@ bash scripts/run_reasoning_state_rl.sh
 ```
 
 Training updates only the policy, using the frozen answer score improvement with and without the generated Reasoning State, plus format and answer-leakage penalties. Outputs default to `outputs/slime_saved/evomemstate-reasoning-state-qwen3-4b/`. No datasets or model weights are bundled. For checkpoint conversion and training input format, see [RL setup](docs/reasoning_state_rl.md). After training, export and serve the policy, then point `REASONING_STATE_*` at its endpoint for inference.
+
+
+## Citation
+
+If you use this code, please cite the accompanying EvoTeam paper:
+
+```
+@article{xiang2026evomemstate,
+  title={EvoMemState: Evolving Memory State for Personal Agents},
+  author={Xiang, Zhishang and Tang, Yunbo and Liu, Zhongqiao and Chen, Junkai and Chen, Zerui and Hu, Qingguo and Zhang, Yuxuan and Grant, William and Zhang, Qinggang Zhang and Su, Jinsong},
+  journal={arXiv preprint arXiv:2611.03743},
+  year={2026}
+}
+```
